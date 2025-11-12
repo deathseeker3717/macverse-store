@@ -1,0 +1,180 @@
+<!-- ========================================
+     MACVERSE STORE - PROJECT STRUCTURE
+     ========================================
+     This is the main homepage of the MacVerse Store.
+     ==========================================
+     FILE: index.html
+     PURPOSE: Homepage with hero and featured products
+     ========================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MacVerse Store - Premium Apple-inspired devices">
+    <title>MacVerse Store</title>
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Navigation Header Start -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/icons/logo.png" alt="MacVerse Logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn-icon">Login</a>
+                    <a href="checkout.html" class="btn-icon">Cart</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navigation Header End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero">
+        <div class="hero-video-wrapper">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="images/hero/hero-video.mp4" type="video/mp4">
+                <source src="images/hero/hero-video.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content-wrapper">
+            <div class="hero-content">
+                <h1 class="hero-title">Think Different.<br>Shop Different.</h1>
+                <p class="hero-subtitle">Experience innovation at its finest. Discover our collection of premium devices crafted for creators, thinkers, and innovators.</p>
+                <div class="hero-cta">
+                    <a href="products.html" class="btn btn-primary">Explore Products</a>
+                    <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Featured Products Section Start -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Collection</h2>
+            <p class="section-subtitle">Handpicked innovations for the modern lifestyle</p>
+            
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/macbook-pro.jpeg" alt="MacBook Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MacBook Pro 16"</h3>
+                        <p class="product-description">Unleash your creativity with the most powerful MacBook ever.</p>
+                        <p class="product-price">From $2,499</p>
+                        <a href="products.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/iphone-17-pro.jpeg" alt="iPhone Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">iPhone 17 Pro</h3>
+                        <p class="product-description">Experience photography reimagined with titanium design.</p>
+                        <p class="product-price">From $1099</p>
+                        <a href="products.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/ipad-pro.jpeg" alt="iPad Pro" loading="lazy">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">iPad Pro 13"</h3>
+                        <p class="product-description">The most advanced iPad ever with M4 chip and Ultra Retina XDR display.</p>
+                        <p class="product-price">From $1,299</p>
+                        <a href="products.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Products Section End -->
+
+    <!-- Footer Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Column 1 -->
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="products.html">Mac</a></li>
+                        <li><a href="products.html">iPhone</a></li>
+                        <li><a href="products.html">iPad</a></li>
+                        <li><a href="products.html">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 2 -->
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 3 -->
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About MacVerse</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 4 -->
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MacVerse Store. All rights reserved. Designed with minimalism in mind.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+</html>
