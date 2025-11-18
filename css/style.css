@@ -485,6 +485,56 @@ section {
     display: block;
 }
 
+/* Login & Signup Pages */
+
+.login-page,
+.signup-page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.login-content,
+.signup-content {
+    max-width: 600px;
+    width: 100%;
+    padding: 3.5rem 3rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+}
+
+.login-form,
+.sign-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-signup {
+    color: #0071e3;
+    font-weight: 500;
+}
+
+.login-signup:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.login-signup-text {
+    text-align: center;
+    font-size: 3.3rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+
 /* Coming Soon Pages */
 .coming-soon {
     min-height: 60vh;
@@ -706,4 +756,17 @@ section {
     font-size: 0.75rem;
     color: #86868b;
     margin: 0;
+}
+
+/* Text Alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
 }
