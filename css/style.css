@@ -478,11 +478,12 @@ section {
     padding: 1.5rem;
     font-size: 0.875rem;
     text-align: center;
-    display: none;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
 }
 
 .gallery-item:hover figcaption {
-    display: block;
+    transform: translateY(0);
 }
 
 /* Login & Signup Pages */
@@ -679,6 +680,8 @@ section {
 .btn-primary:hover {
     background-color: #0051a8;
     opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary {
