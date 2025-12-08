@@ -14,6 +14,8 @@
     <!-- CSS Files -->   
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/variables.css">
 
 </head>
 <body>
@@ -24,7 +26,8 @@
             <div class="container">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/icons/logo.png" alt="MacVerse Logo">
+                        <img src="images/icons/logo.png" alt="MacVerse Logo" class="logo-light">
+                        <img src="images/icons/logo-dark.png" alt="MacVerse Logo" class="logo-dark">
                     </a>
                 </div>
                 <ul class="nav-links">
@@ -120,6 +123,13 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html {
@@ -37,9 +38,10 @@ body {
     font-family: 'Segoe UI', 'Inter', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    color: #1d1d1f;
-    background-color: #ffffff;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-main);
     padding-top: 70px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Remove default link styling */
@@ -76,7 +78,7 @@ input, textarea, button, select {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.2;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
     margin-bottom: 1.5rem;
 }
 
@@ -107,7 +109,7 @@ h6 {
 
 p {
     margin-bottom: 1.5rem;
-    color: #424245;
+    color: var(--color-text-secondary);
     line-height: 1.8;
 }
 
@@ -128,15 +130,16 @@ section {
 /* ===== 4. NAVIGATION ===== */
 
 .main-header {
-    background-color: rgba(255, 255, 255, 0.8);  
+    background-color: var(--color-bg-header);  
     backdrop-filter: blur(15px);                 
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px var(--color-shadow);
     position: fixed;                              
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 9999 !important;  
+    transition: background-color 0.3s ease;
 }
 
 .navbar {
@@ -165,7 +168,7 @@ section {
 .nav-links a {
     font-size: 0.875rem;
     font-weight: 500;
-    color: #424245;
+    color: var(--color-text-secondary);
     padding: 0.5rem 1.2rem;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -173,7 +176,7 @@ section {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #0071e3;
+    color: var(--color-primary);
     background-color: rgba(0, 113, 227, 0.1);
 }
 
@@ -186,14 +189,15 @@ section {
 .btn-icon {
     font-size: 0.875rem;
     font-weight: 500;
-    color: #0071e3;
+    color: var(--color-primary);
     padding: 0.5rem 1.5rem;
-    border: 1px solid #0071e3;
+    border: 1px solid var(--color-primary);
     border-radius: 9999px;
+    transition: all 0.3s ease;
 }
 
 .btn-icon:hover {
-    background-color: #0071e3;
+    background-color: var(--color-primary);
     color: #ffffff;
     opacity: 1;
 }
@@ -293,25 +297,27 @@ section {
 }
 
 .product-card {
-    background-color: #ffffff;
+    background-color: var(--color-card-bg);
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--color-shadow);
     position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px var(--color-shadow-hover);
 }
 
 .product-image {
-    background-color: #f5f5f7;
+    background-color: var(--color-product-image-bg);
     padding: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 280px;
     position: relative;
+    transition: background-color 0.3s ease;
 }
 
 .product-image img {
@@ -329,7 +335,7 @@ section {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background-color: #0071e3;
+    background-color: var(--color-primary);
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 9999px;
@@ -346,12 +352,12 @@ section {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
 }
 
 .product-description {
     font-size: 0.875rem;
-    color: #86868b;
+    color: var(--color-text-muted);
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
@@ -359,7 +365,7 @@ section {
 .product-price {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
     margin-bottom: 1.5rem;
 }
 
@@ -367,7 +373,7 @@ section {
 /* ===== 7. PAGE SECTIONS ===== */
 
 .featured-products {
-    background-color: #ffffff;
+    background-color: var(--color-bg-main);
 }
 
 .section-title {
@@ -375,13 +381,13 @@ section {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
 }
 
 .section-subtitle {
     text-align: center;
     font-size: 1.125rem;
-    color: #86868b;
+    color: var(--color-text-muted);
     margin-bottom: 4rem;
 }
 
@@ -407,14 +413,14 @@ section {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
     position: relative;
     z-index: 1;
 }
 
 .page-subtitle {
     font-size: 1.125rem;
-    color: #424245;
+    color: var(--color-text-secondary);
     position: relative;
     z-index: 1;
 }
@@ -432,12 +438,12 @@ section {
 .content-block h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
 }
 
 .content-block p {
     font-size: 1rem;
-    color: #424245;
+    color: var(--color-text-secondary);
     line-height: 1.8;
     margin-bottom: 1.5rem;
 }
@@ -454,11 +460,12 @@ section {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--color-shadow);
+    transition: box-shadow 0.3s ease;
 }
 
 .gallery-item:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px var(--color-shadow-hover);
 }
 
 .gallery-item img {
@@ -503,8 +510,9 @@ section {
     width: 100%;
     padding: 3.5rem 3rem;
     border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    background-color: #ffffff;
+    box-shadow: 0 10px 30px var(--color-shadow);
+    background-color: var(--color-card-bg);
+    transition: background-color 0.3s ease;
 }
 
 .login-form,
@@ -515,7 +523,7 @@ section {
 }
 
 .login-signup {
-    color: #0071e3;
+    color: var(--color-primary);
     font-weight: 500;
 }
 
@@ -543,7 +551,8 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #f5f5f7;
+    background-color: var(--color-bg-secondary);
+    transition: background-color 0.3s ease;
 }
 
 .coming-soon-content {
@@ -553,13 +562,13 @@ section {
 .coming-soon-text {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #0071e3;
+    color: var(--color-primary);
     margin-bottom: 1.5rem;
 }
 
 .coming-soon-description {
     font-size: 1.125rem;
-    color: #86868b;
+    color: var(--color-text-muted);
     margin-bottom: 3rem;
     line-height: 1.8;
 }
@@ -568,7 +577,7 @@ section {
 /* ===== 8. FORMS ===== */
 
 .contact-section {
-    background-color: #ffffff;
+    background-color: var(--color-bg-main);
 }
 
 .contact-wrapper {
@@ -582,7 +591,7 @@ section {
 .contact-info h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
 }
 
 .contact-form {
@@ -600,22 +609,23 @@ section {
 .form-group label {
     font-size: 0.875rem;
     font-weight: 500;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
 }
 
 .form-group input,
 .form-group textarea {
     padding: 1.5rem;
-    border: 1px solid #86868b;
+    border: 1px solid var(--color-border);
     border-radius: 8px;
     font-size: 1rem;
-    background-color: #ffffff;
+    background-color: var(--color-card-bg);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #0071e3;
+    border-color: var(--color-primary);
 }
 
 .form-group textarea {
@@ -625,9 +635,10 @@ section {
 
 /* Contact Info Blocks */
 .contact-info {
-    background-color: #f5f5f7;
+    background-color: var(--color-bg-secondary);
     padding: 3rem;
     border-radius: 18px;
+    transition: background-color 0.3s ease;
 }
 
 .info-block {
@@ -638,22 +649,22 @@ section {
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
 }
 
 .info-block p,
 .info-block a {
     font-size: 0.875rem;
-    color: #424245;
+    color: var(--color-text-secondary);
     line-height: 1.8;
 }
 
 .info-block a:hover {
-    color: #0071e3;
+    color: var(--color-primary);
 }
 
 .social-links a {
-    color: #0071e3;
+    color: var(--color-primary);
     font-weight: 500;
 }
 
@@ -673,39 +684,42 @@ section {
 }
 
 .btn-primary {
-    background-color: #0071e3;
+    background-color: var(--color-primary);
     color: #ffffff;
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #0051a8;
+    background-color: var(--color-primary-hover);
     opacity: 1;
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--color-shadow);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: #0071e3;
-    border: 2px solid #0071e3;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-    background-color: #0071e3;
+    background-color: var(--color-primary);
     color: #ffffff;
     opacity: 1;
 }
 
 .btn-outline {
     background-color: transparent;
-    color: #1d1d1f;
-    border: 1px solid #86868b;
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
-    background-color: #1d1d1f;
-    color: #ffffff;
-    border-color: #1d1d1f;
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-main);
+    border-color: var(--color-text-primary);
     opacity: 1;
 }
 
@@ -713,9 +727,10 @@ section {
 /* ===== 10. FOOTER ===== */
 
 .main-footer {
-    background-color: #f5f5f7;
+    background-color: var(--color-bg-secondary);
     padding: 6rem 0 1rem;
     margin-top: 8rem;
+    transition: background-color 0.3s ease;
 }
 
 .footer-content {
@@ -729,7 +744,7 @@ section {
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: #1d1d1f;
+    color: var(--color-text-primary);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -742,22 +757,23 @@ section {
 
 .footer-column a {
     font-size: 0.875rem;
-    color: #424245;
+    color: var(--color-text-secondary);
+    transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
-    color: #0071e3;
+    color: var(--color-primary);
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid #86868b;
+    border-top: 1px solid var(--color-border);
 }
 
 .footer-bottom p {
     font-size: 0.75rem;
-    color: #86868b;
+    color: var(--color-text-muted);
     margin: 0;
 }
 
@@ -772,4 +788,64 @@ section {
 
 .text-right {
     text-align: right;
+}
+
+/* ===== DARK MODE TOGGLE BUTTON ===== */
+
+.theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px var(--color-shadow-hover);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+.theme-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.theme-toggle:hover .theme-icon {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.theme-icon.switching {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+/* ===== LOGO DARK MODE SWITCHING ===== */
+
+/* Hide dark logo by default (light mode) */
+.logo-dark {
+    display: none;
+}
+
+/* In dark mode: hide light logo, show dark logo */
+[data-theme="dark"] .logo-light {
+    display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+    display: block;
 }
