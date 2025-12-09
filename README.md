@@ -28,18 +28,20 @@ It’s ideal as a lightweight storefront showcase for tech-products (laptops, ac
 
 ## 📁 Project Structure (Simplified)
 
+```
 macverse-store/
-├── index.html ← Homepage (hero, featured products, etc.)
-├── products.html ← Products / Store listing page
+├── index.html               ← Homepage (hero, featured products, etc.)
+├── products.html            ← Store listing page
 ├── css/
-│ ├── main.css ← Core styles (layout, typography, components)
-│ ├── responsive.css ← Media queries & breakpoints
-│ └── animations.css ← Animation/keyframe definitions & utility classes
-├── js/ ← (optional) custom JS if you add features (e.g. dark-mode toggle)
+│   ├── main.css             ← Core styles (layout, typography, components)
+│   ├── responsive.css       ← Media queries & breakpoints
+│   └── animations.css       ← Animations + keyframes
+├── js/                      ← Optional JS (dark-mode, interactions)
 ├── assets/
-│ ├── images/ ← Product images, logos, icons
-│ └── (other media) ← Videos, bg images etc.
-└── README.md ← This file
+│   ├── images/              ← Product images, logos, icons
+│   └── media/               ← Videos, backgrounds, etc.
+└── README.md                ← This file
+```
 
 Feel free to reorganize (e.g. add fonts, icons, external libs) according to your needs.
 
