@@ -18,7 +18,6 @@ function saveCart(cart) {
 function addToCart(productName, price, imagePath) {
     const cart = getCart();
     
-    // Check if item already exists
     const existingItem = cart.find(item => item.name === productName);
     
     if (existingItem) {
@@ -75,11 +74,10 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Update cart count in navigation (optional)
+// Update cart count in navigation
 function updateCartCount() {
     const cart = getCart();
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-    // You can add a badge to show count if needed
 }
 
 // Remove item from cart
@@ -87,7 +85,7 @@ function removeItem(index) {
     const cart = getCart();
     cart.splice(index, 1);
     saveCart(cart);
-    loadCart(); // Reload cart display
+    loadCart();
 }
 
 // Load and display cart items (for checkout.html)
@@ -97,26 +95,22 @@ function loadCart() {
     const cartEmpty = document.getElementById('cart-empty');
     const cartContentWrapper = document.querySelector('.cart-content-wrapper');
     
-    if (!cartItemsContainer) return; // Not on checkout page
+    if (!cartItemsContainer) return; 
     
     if (cart.length === 0) {
-        // Show empty cart state
         cartContentWrapper.style.display = 'none';
         cartEmpty.style.display = 'block';
-        // Hide cart header/title
         const cartHeader = document.querySelector('.cart-header');
         if (cartHeader) cartHeader.style.display = 'none';
         return;
     }
     
-    // Show cart with items
     cartContentWrapper.style.display = 'grid';
     cartEmpty.style.display = 'none';
-    // Show cart header/title
+
     const cartHeader = document.querySelector('.cart-header');
     if (cartHeader) cartHeader.style.display = 'block';
     
-    // Clear existing items
     cartItemsContainer.innerHTML = '';
     
     // Add each cart item
@@ -154,7 +148,6 @@ function updateCartTotal() {
         maximumFractionDigits: 2
     });
     
-    // Update all total displays
     const cartTotal = document.getElementById('cart-total');
     const subtotalEl = document.getElementById('subtotal');
     const totalEl = document.getElementById('total');

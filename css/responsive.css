@@ -7,29 +7,24 @@
 /* ===== Tablets (max-width: 1024px) ===== */
 @media (max-width: 1024px) {
 
-    /* Container padding */
     .container {
         padding: 0 1.5rem;
     }
 
-    /* Product Grid: 2 columns */
     .product-grid,
     .product-grid-full {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 
-    /* Hero title smaller */
     .hero-title {
         font-size: 3.2rem;
     }
 
-    /* Page header title smaller */
     .page-title {
         font-size: 2.8rem;
     }
 
-    /* Gallery becomes 2 columns */
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -54,12 +49,10 @@
 /* ===== Mobile Large (max-width: 768px) ===== */
 @media (max-width: 768px) {
 
-    /* Navigation links stack or hide */
     .nav-links {
-        display: none;  /* simple approach (no hamburger menu) */
+        display: none; 
     }
 
-    /* Buttons smaller */
     .btn,
     .btn-primary,
     .btn-secondary,
@@ -68,7 +61,6 @@
         font-size: 0.9rem;
     }
 
-    /* Hero text smaller */
     .hero-title {
         font-size: 2.5rem;
     }
@@ -77,18 +69,15 @@
         font-size: 1rem;
     }
 
-    /* Product grid: 1 column */
     .product-grid,
     .product-grid-full {
         grid-template-columns: 1fr;
     }
 
-    /* Forms stack vertically */
     .form-grid {
         grid-template-columns: 1fr;
     }
 
-    /* Contact page grid becomes 1 column */
     .contact-wrapper {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -120,27 +109,22 @@
 /* ===== Mobile Small (max-width: 480px) ===== */
 @media (max-width: 480px) {
 
-    /* Reduce section spacing */
     section {
         padding: 3rem 0;
     }
 
-    /* Smaller headings */
     h1 { font-size: 2rem; }
     h2 { font-size: 1.8rem; }
     h3 { font-size: 1.5rem; }
 
-    /* Hero title further smaller */
     .hero-title {
         font-size: 2rem;
     }
 
-    /* Card padding smaller */
     .product-info {
         padding: 1.5rem;
     }
 
-    /* Footer grid becomes 1 column */
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
