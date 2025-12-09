@@ -33,7 +33,6 @@ function addToCart(productName, price, imagePath) {
     
     saveCart(cart);
     showNotification(`☑️ ${productName} added to cart! `);
-    updateCartCount();
 }
 
 // Show notification when item added
@@ -73,12 +72,6 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-
-// Update cart count in navigation
-function updateCartCount() {
-    const cart = getCart();
-    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-}
 
 // Remove item from cart
 function removeItem(index) {
