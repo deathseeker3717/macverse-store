@@ -47,18 +47,74 @@
     </header>
     <!-- Navigation Header End -->
 
-    <!-- Coming Soon Section Start -->
-    <section class="coming-soon">
+    <section class="page-header">
         <div class="container">
-            <div class="coming-soon-content">
-                <h1>Shopping Cart & Checkout</h1>
-                <p class="coming-soon-text">Coming Soon</p>
-                <p class="coming-soon-description">We're building a secure and seamless checkout experience. Your cart functionality will be available shortly with multiple payment options.</p>
-                <a href="products.html" class="btn btn-primary">Continue Shopping</a>
+            <h1 class="page-title">Shopping Cart & Checkout</h1>
+            <p class="page-subtitle">A secure and seamless checkout experience with multiple payment options.</p>
+        </div>
+    </section>
+
+
+    <!-- Cart Section Start -->
+    <section class="cart-section">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h1>Cart</h1>
+            </div>
+            <div class="cart-content-wrapper">
+                
+                <!-- Cart Items (Left Column) -->
+                <div class="cart-items" id="cart-items">
+                    
+                </div>
+
+                <!-- Cart Summary (Right Column) -->
+                <div class="cart-summary">
+                    <div class="cart-summary-content">
+                        <p class="cart-total-text">Your cart total is <strong id="cart-total">$0.00</strong>.</p>
+                        <p class="cart-delivery-text">Free delivery and free returns.</p>
+                        
+                        <button class="btn btn-primary cart-checkout-btn">Check Out</button>
+                        
+                        <div class="cart-summary-breakdown">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span>FREE</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Estimated tax for:</span>
+                                <span><a href="#">Enter zip code</a></span>
+                            </div>
+                            <div class="summary-row summary-total">
+                                <span><strong>Total</strong></span>
+                                <span><strong id="total">$0.00</strong></span>
+                            </div>
+                        </div>
+
+                        <p class="cart-help-text">Need some help? <a href="contact.html">Chat now</a> or call 1-800-MY-MACVERSE.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty Cart State (Hidden by default) -->
+            <div class="cart-empty" id="cart-empty" style="display: none;">
+                <h2>Your cart is empty.</h2>
+                <p>Sign in to see if you have any saved items. Or continue shopping.</p>
+                <div class="cart-empty-actions">
+                    <a href="login.html" class="btn btn-secondary">Sign In</a>
+                    <a href="products.html" class="btn btn-primary">Continue Shopping</a>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Coming Soon Section End -->
+    <!-- Cart Section End -->
+
+
 
     <!-- Footer Start -->
     <footer class="main-footer">
@@ -113,7 +169,8 @@
         <span class="theme-icon">🌙</span>
     </button>
 
-    <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/cart.js"></script>
 
 </body>
 </html>
